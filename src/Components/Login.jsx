@@ -9,7 +9,8 @@ function Login() {
         </div>
         <div className='grid  justify-center grid-container '>
           <h1 className='text-3xl font-semibold'>Sign in</h1>
-          <p>Email or mobile phone number</p>
+          <p className='mt-2 font-semibold text-sm'>Email or mobile phone number</p>
+          <input className='' placeholder='Enter Your Mail' />
 
         </div>
 

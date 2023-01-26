@@ -10,10 +10,10 @@ function Login() {
         <img alt="" src={Logo} className="h-16 w-32" />
       </div>
       <div className="flex justify-center items-center">
-      <div className="grid  justify-center grid-container space-y-2 border border-slate-300 w-[22rem] h-[20rem] ">
+      <div className="grid  justify-center grid-container rounded-md border border-slate-300 w-[22rem] h-[20rem] ">
         <h1 className="text-3xl font-semibold">Sign in</h1>
         <p className=" font-semibold text-sm">Email or mobile phone number</p>
-        <input className="border border-slate-400 rounded-sm w-72 h-7" />
+        <input className="border border-slate-400  rounded-sm w-72 h-7" />
         <button className=" bg-gradient-to-b from-amber-200 to-amber-300  hover:bg-amber-400 hover:to-amber-400  h-7 w-72 rounded-sm border border-slate-600">
           Continue
         </button>

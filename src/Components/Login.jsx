@@ -1,5 +1,5 @@
 import React from "react";
-// import Logo from "../assets/Amazon_Logo.png";
+
 import Logo from "../assets/amazonlogo.png"
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 

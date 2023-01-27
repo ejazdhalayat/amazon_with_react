@@ -1,17 +1,17 @@
 
-import Navbar from "./Components/Navbar";
+
 import {getAuth,signOut,GoogleAuthProvider,signInWithPopup,} from "firebase/auth";
 import Login from "./Components/Login";
 import app from "./Firebase";
-import { useState, useEffect } from "react";
-import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
+import { useState } from "react";
+// import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 import Home from "./Components/Home";
 
 function App() {
   const [user, setUser] = useState(false);
   const auth = getAuth(app);
   const provider = new GoogleAuthProvider();
-  const db = getFirestore(app);
+  // const db = getFirestore(app);
 
   // async function checklogin() {
   //   const docRef = doc(db, "users", user?.uid);

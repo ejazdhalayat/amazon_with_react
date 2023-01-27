@@ -7,10 +7,11 @@ import ShoppingCartCheckoutOutlinedIcon from "@mui/icons-material/ShoppingCartCh
 function Navbar({ logout, ...props }) {
   return (
     <div>
-      <div className="h-16 w-full flex items-center   space-x-2 px-2 py-1 bg-[#131921]">
+      <div className="h-16 w-full flex items-center space-x-3 px-2 py-1 bg-[#131921]">
         <img
           src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
           className="w-28 flex items-center"
+          alt=""
         ></img>
 
         <div className="space-y-1  items-center border border-[#131921] hover:border-white px-2 ">
@@ -21,12 +22,12 @@ function Navbar({ logout, ...props }) {
           </p>
         </div>
 
-        <div className="flex  h-12">
+        <div className="flex  h-9">
           <p className="bg-slate-400 p-2  rounded-l  text-base">
             All
             <ArrowDropDownIcon />
           </p>
-          <input placeholder="" className=" w-[40rem]"></input>
+          <input placeholder="" className=" w-[40rem] "></input>
           <button className="bg-yellow-400 w-10 rounded-r px-2">
             <SearchIcon className="h-6" />
           </button>
@@ -34,12 +35,12 @@ function Navbar({ logout, ...props }) {
           <div className="h-12 px-1 flex">
             <button class="peer flex px-2 py-2 border border-[#131921] hover:border-white  text-white ">
               <span>
-                {" "}
                 <img
                   src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg"
                   className="mr-2 mt-1 h-5 "
+                  alt=""
                 />
-              </span>{" "}
+              </span>
               EN
             </button>
 
@@ -95,8 +96,8 @@ function Navbar({ logout, ...props }) {
 
         <div className="space-y-0 items-center border border-[#131921] hover:border-white ">
           <div className="h-12 px-1 flex">
-            <div class=" flex items-center px-2 py-2     text-white ">
-              <a> Hello</a>{" "}
+            <div class=" flex items-center px-2 py-2 text-white ">
+              <p> Hello</p>
             </div>
             <button
               className="text-white hover:border-white"

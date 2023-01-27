@@ -7,6 +7,7 @@ import ShoppingCartCheckoutOutlinedIcon from "@mui/icons-material/ShoppingCartCh
 function Navbar({ logout, ...props }) {
   return (
     <div>
+      {/* Navbar */}
       <div className="h-16 w-full flex items-center space-x-3 px-2 py-1 bg-[#131921]">
         <img
           src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -93,7 +94,7 @@ function Navbar({ logout, ...props }) {
             </div>
           </div>
         </div>
-
+    {/* Logout */}
         <div className="space-y-0 items-center border border-[#131921] hover:border-white ">
           <div className="h-12 px-1 flex">
             <div class=" flex items-center px-2 py-2 text-white ">

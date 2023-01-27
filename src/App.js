@@ -1,11 +1,12 @@
 
 
 import {getAuth,signOut,GoogleAuthProvider,signInWithPopup,} from "firebase/auth";
-import Login from "./Components/Login";
+import Login from "./Screens/Login";
 import app from "./Firebase";
 import { useState } from "react";
 // import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
-import Home from "./Components/Home";
+import Home from "./Screens/Home";
+import Form from "./Components/Form";
 
 function App() {
   const [user, setUser] = useState(false);
@@ -53,7 +54,8 @@ function App() {
 
   return (
     <div className="App">
-      {user ? <Home logout={Signout} /> : <Login login={signUp} />}
+      {/* {user ? <Home logout={Signout} /> : <Login login={signUp} />} */}
+      <Form />
     </div>
   );
 }

@@ -59,7 +59,7 @@ function Navbar({ logout, ...props }) {
                   class="w-full py-4 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   English
-                </label>
+                </label> 
               </div>
               <div class="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
                 <input

@@ -54,8 +54,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* {user ? <Home logout={Signout} /> : <Login login={signUp} />} */}
-      <Form />
+      {user ? <Home logout={Signout} /> : <Login login={signUp} />}
+      {/* <Form /> */}
     </div>
   );
 }

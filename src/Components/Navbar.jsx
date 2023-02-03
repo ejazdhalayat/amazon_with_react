@@ -8,7 +8,7 @@ function Navbar({ logout, ...props }) {
   return (
     <div>
       {/* Navbar */}
-      <div className="h-16 w-full flex items-center space-x-3 px-2 py-1 bg-[#131921]">
+      <div className="h-16 w-full fixed top-0 flex items-center space-x-3 px-2 py-1 bg-[#131921]">
         <img
           src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
           className="w-28 flex items-center"

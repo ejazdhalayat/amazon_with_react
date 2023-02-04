@@ -6,14 +6,10 @@ import ShoppingCartCheckoutOutlinedIcon from "@mui/icons-material/ShoppingCartCh
 
 function Navbar({ logout, ...props }) {
   return (
-    <div>
+    <div className="bg-[#131921] fixed top-0 w-screen z-50 p-2 flex text-white">
       {/* Navbar */}
-      <div className="h-16 w-full fixed top-0 flex items-center space-x-3 px-2 py-1 bg-[#131921]">
-        <img
-          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-          className="w-28 flex items-center"
-          alt=""
-        ></img>
+      <div className="flex mx-4 items-center space-x-6 justify-between w-full">
+      <img className=' h-10  ' src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" />
 
         <div className="space-y-1  items-center border border-[#131921] hover:border-white px-2 ">
           <p className="text-white px-2 text-sm">Home</p>

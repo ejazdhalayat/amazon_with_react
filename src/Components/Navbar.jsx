@@ -2,119 +2,55 @@ import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import ShoppingCartCheckoutOutlinedIcon from "@mui/icons-material/ShoppingCartCheckoutOutlined";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 function Navbar({ logout, ...props }) {
   return (
-    <div className="bg-[#131921] fixed top-0 w-screen z-50 p-2 flex text-white">
-      {/* Navbar */}
-      <div className="flex mx-4 items-center space-x-6 justify-between w-full">
-      <img className=' h-10  ' src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" />
+    
+    <div className=' bg-[#131921]  flex text-white'>
+    <div className="flex mx-4 items-center space-x-6 justify-between w-full">
+         <img className='h-10 w-17 mt-5' src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" />
+         <div className=' font-medium whitespace-nowrap '>
+             <p className=' text-gray-400'>Delivery to Anmol</p>
+             <p className=' text-lg leading-3'>Hyderabad 500048</p>
+         </div>
+         <div className='flex w-full'>
+             <button className=' flex items-center bg-gray-200 border border-[#131921] outline-1  p-2 text-black rounded-l-lg'>All <ArrowDropDownIcon fontSize='inherit' /> </button>
+             <input className='border-y border-[#131921] w-full' />
+             <button className=' bg-yellow-500 border-y border-[#131921] border-r text-black text-3xl rounded-r-lg px-2 flex items-center'><SearchIcon fontSize='inherit' /></button>
+         </div>
+         <div className=' flex items-end pt-5'>
+             <img src='https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg' className=' h-5 ' />
+             <p className=' font-bold pl-1 uppercase -mb-1'>EN</p>
+             <ArrowDropDownIcon fontSize='inherit' />
+         </div>
+         <div className=' font-medium whitespace-nowrap '>
+             <p className=' text-gray-400'>Hello Anmol</p>
+             <div className=' flex'>
+             <p className=' text-xl leading-4'>Account & List</p>
+             <ArrowDropDownIcon fontSize='inherit' />
+             </div>
+             
+         </div>
+         <div className=' font-medium '>
+             <p className=' text-gray-400'>Return</p>
+             <div className=' flex'>
+             <p className=' text-xl leading-4 whitespace-nowrap'>& Order</p>
+             
+             </div>
+             
+         </div>
+         <div className=' font-medium flex flex-col items-end '>
+             <div className=' flex flex-col text-3xl text-center scale-75 '>
+             <p className=' leading-3 text-orange-400'>0</p>
+             <span className=' text-white text-5xl'><ShoppingCartOutlinedIcon fontSize='inherit' /></span>
+             </div>
+             
+         </div>
 
-        <div className="space-y-1  items-center border border-[#131921] hover:border-white px-2 ">
-          <p className="text-white px-2 text-sm">Home</p>
-          <p className="text-bold text-xs text-white">
-            <LocationOnIcon />
-            Bijapur </p>
-        </div>
 
-        <div className="flex  h-9">
-          <p className="bg-slate-400 p-2  rounded-l  text-base">
-            All
-            <ArrowDropDownIcon />
-          </p>
-          <input placeholder="" className=" w-[40rem] "></input>
-          <button className="bg-yellow-400 w-10 rounded-r px-2">
-            <SearchIcon className="h-6" />
-          </button>
-
-          <div className="h-12 px-1 flex">
-            <button class="peer flex px-2 py-2 border border-[#131921] hover:border-white  text-white ">
-              <span>
-                <img
-                  src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg"
-                  className="mr-2 mt-1 h-5 "
-                  alt=""
-                />
-              </span>
-              EN
-            </button>
-
-            <div class="hidden peer-hover:flex hover:flex  w-28  flex-col bg-white drop-shadow-lg mt-14 absolute">
-              <div class="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
-                <input
-                  id="bordered-radio-1"
-                  type="radio"
-                  value=""
-                  name="bordered-radio"
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  for="bordered-radio-1"
-                  class="w-full py-4 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  English
-                </label> 
-              </div>
-              <div class="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
-                <input
-                  id="bordered-radio-1"
-                  type="radio"
-                  value=""
-                  name="bordered-radio"
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  for="bordered-radio-1"
-                  class="w-full py-4 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  Hindi
-                </label>
-              </div>
-              <div class="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
-                <input
-                  id="bordered-radio-1"
-                  type="radio"
-                  value=""
-                  name="bordered-radio"
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  for="bordered-radio-1"
-                  class="w-full py-4 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  Kannada
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-    {/* Logout */}
-        <div className="space-y-0 items-center border border-[#131921] hover:border-white ">
-          <div className="h-12 px-1 flex">
-            <div class=" flex items-center px-2 py-2 text-white ">
-              <p> Hello</p>
-            </div>
-            <button
-              className="text-white hover:border-white"
-              onClick={() => logout()}
-            >
-              SignOut
-            </button>
-          </div>
-        </div>
-
-        <div className="space-y-0 items-center border border-[#131921] hover:border-white h-10 ">
-          <p className="text-white text-sm">Return</p>
-          <p className="text-bold text-xs text-white">& Orders</p>
-        </div>
-
-        <div className="space-y-0 items-center border h-14 border-[#131921] hover:border-white px-2 flex">
-          <ShoppingCartCheckoutOutlinedIcon className="h-14 text-white" />
-          <p className="text-bold text-xl text-white ">Cart</p>
-        </div>
-      </div>
-    </div>
+     </div>
+ </div>
   );
 }
 

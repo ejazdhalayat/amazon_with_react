@@ -17,9 +17,9 @@ function Home({logout,...props}) {
     // </div>
     <div>
       <Navbar />
-        <div className="bg-slate-200 pt-20  pb-56 h-screen">
-      <div className=" max-w-[90rem]  mx-auto relative ">
-        <img className="" src={banner} />
+        <div className="bg-slate-200  pb-56 h-screen">
+      <div className=" max-w-[70rem]  mx-auto relative  ">
+        <img className="mx-auto" src={banner} />
         <div className=" absolute bg-gradient-to-t from-slate-200 to-transparent via-slate-200/50  bottom-0 z-10 w-full h-1/3 " />
       </div>
       <div className=" relative z-50">

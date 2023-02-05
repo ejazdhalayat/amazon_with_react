@@ -15,8 +15,7 @@ function Navbar({ logout, ...props }) {
           <p className="text-white px-2 text-sm">Home</p>
           <p className="text-bold text-xs text-white">
             <LocationOnIcon />
-            Bijapur
-          </p>
+            Bijapur </p>
         </div>
 
         <div className="flex  h-9">
